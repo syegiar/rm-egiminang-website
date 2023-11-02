@@ -1,0 +1,569 @@
+.topnav a,
+a {
+  text-decoration: none;
+}
+.slides,
+.topnav a {
+  display: block;
+}
+.topnav .logo,
+.topnav a,
+footer {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px #868686;
+  padding: 5px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  overflow: hidden;
+}
+.bar1,
+.bar2,
+.bar3,
+.change .bar1,
+.change .bar2,
+.change .bar3 {
+  background-color: #000;
+}
+.topnav a {
+  float: left;
+  padding: 14px 16px;
+  color: #000;
+  font-size: 17px;
+}
+.topnav .logo {
+  font-weight: 700;
+}
+.topnav .barmenu {
+  padding-right: 15px;
+  float: right;
+  font-weight: 700;
+}
+.topnav .barmenu a:hover {
+  color: gray;
+  font-weight: 700;
+}
+.topnav .icon {
+  display: none;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 3px;
+  margin: 3px 0;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+.change .bar1 {
+  transform: rotate(-40deg) translate(-3px, 2px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(40deg) translate(-6px, -6px);
+}
+.font-sdw {
+  text-shadow: 3px 5px 3px #000;
+  color: #fff;
+}
+.t-link {
+  color: #4e4d4d;
+}
+.t-link:hover {
+  color: #bbb;
+}
+.bg-grey {
+  background-color: #f8f9fa;
+}
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+}
+.bg-yellow {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+.bg-orange {
+  background-color: rgba(255, 166, 0, 0.5);
+}
+.bg-blue {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+.bg-red {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.bg-green {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.wd-25 {
+  width: 25%;
+}
+.wd-50 {
+  width: 50%;
+}
+.wd-75 {
+  width: 75%;
+}
+.wd-100,
+aside img,
+footer {
+  width: 100%;
+}
+.fade {
+  position: relative;
+  animation-name: fade;
+  animation-duration: 0.3s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.c-hover:hover {
+  color: #444941;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px;
+}
+footer {
+  height: 10%;
+  padding: 10px;
+  margin: auto;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 0 10px;
+}
+.jusflex1 {
+  justify-content: space-between;
+}
+aside {
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #f0f8ff;
+  border: 2px solid #000;
+}
+aside a {
+  color: #00f;
+}
+aside img {
+  border-radius: 20px;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .jumbotron .img-cnt,
+  .slideshow img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .matop-1 {
+    margin-top: 50px;
+  }
+  .matop-2 {
+    margin-top: 100px;
+  }
+  .mabot-1 {
+    margin-bottom: 50px;
+  }
+  .mabot-2 {
+    margin-bottom: 100px;
+  }
+  .content-left {
+    float: left;
+    width: 50%;
+  }
+  .content-right {
+    float: right;
+    width: 50%;
+  }
+  .jumbotron {
+    width: 100%;
+    height: auto;
+  }
+  .jumbotron .j-tittle {
+    width: 100%;
+    border: 2px dashed #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .jumbotron .jcontent {
+    width: 60%;
+    font-family: "Playfair Display", serif;
+  }
+  .jumbotron .jcontent h1 {
+    font-size: 6vw;
+  }
+  .jumbotron .jcontent h2 {
+    font-size: 4vw;
+  }
+  .bttn,
+  .jumbotron .jcontent p {
+    font-size: 2vw;
+  }
+  .jumbotron .img-bg {
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .jumbotron .img-cnt {
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 70%;
+  }
+  .bttn {
+    line-height: 1;
+    overflow: hidden;
+    padding: 10px;
+  }
+  .bttn .sbox {
+    color: #fff;
+    border: 2px solid;
+    font-weight: 700;
+    padding: 10px;
+  }
+  .bttn a:hover {
+    color: #444941;
+    background-color: #fff;
+    box-shadow: 4px 4px 0 2px;
+    border: 3px solid;
+    font-weight: 700;
+  }
+  .card {
+    width: 30%;
+    margin: 25px;
+    text-align: center;
+    border: 2px solid;
+    padding: 30px;
+  }
+  .card .c-text {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid;
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  .card img {
+    max-width: 70%;
+    max-height: 50%;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .slideshow {
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
+  }
+  .slideshow img {
+    border-radius: 8px;
+    width: 80%;
+    height: 30vw;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.66);
+  }
+}
+@media screen and (min-width: 656px) and (max-width: 1024px) {
+  .jumbotron .img-cnt,
+  .slideshow img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    margin: 25px;
+  }
+  .matop-1 {
+    margin-top: 25px;
+  }
+  .matop-2 {
+    margin-top: 50px;
+  }
+  .mabot-1 {
+    margin-bottom: 25px;
+  }
+  .mabot-2 {
+    margin-bottom: 50px;
+  }
+  .jumbotron {
+    width: 100%;
+    height: auto;
+  }
+  .jumbotron .jcontent h1 {
+    font-size: 6vw;
+  }
+  .jumbotron .jcontent h2 {
+    font-size: 4.4vw;
+  }
+  .bttn,
+  .jumbotron .jcontent p {
+    font-size: 2vw;
+  }
+  .jumbotron .j-tittle {
+    width: 100%;
+    border: 2px dashed #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .jumbotron .img-bg {
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .jumbotron .jcontent {
+    position: relative;
+    width: 60%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: "Playfair Display", serif;
+  }
+  .jumbotron .img-cnt {
+    border-radius: 8px;
+    margin-top: 50px;
+    width: 63%;
+  }
+  .content-left {
+    float: left;
+    width: 50%;
+  }
+  .content-right {
+    float: right;
+    width: 50%;
+  }
+  .bttn {
+    line-height: 1;
+    overflow: hidden;
+    padding: 10px;
+  }
+  .bttn .sbox {
+    color: #fff;
+    border: 2px solid;
+    font-weight: 700;
+    padding: 10px;
+  }
+  .bttn a:hover {
+    color: #444941;
+    background-color: #fff;
+    box-shadow: 4px 4px 0 2px;
+    border: 3px solid;
+    font-weight: 700;
+  }
+  .card {
+    width: 100%;
+    padding: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20;
+    text-align: center;
+    border: 2px solid;
+  }
+  .card .c-text {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid;
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  .card img {
+    max-width: 60%;
+    max-height: 50%;
+  }
+  .flex-col-tab {
+    flex-direction: column;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .slideshow {
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
+  }
+  .slideshow img {
+    border-radius: 8px;
+    width: 80%;
+    height: 30vw;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.66);
+  }
+  aside {
+    font-size: 13px;
+    width: 98%;
+  }
+  aside img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 656px) {
+  .topnav .barmenu:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: fixed;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .logo {
+    border-bottom: 2px solid;
+    background-color: #fafafa;
+  }
+  .topnav.responsive .barmenu {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .matop-1 {
+    margin-top: 20px;
+  }
+  .matop-2 {
+    margin-top: 50px;
+  }
+  .mabot-1 {
+    margin-bottom: 20px;
+  }
+  .mabot-2 {
+    margin-bottom: 50px;
+  }
+  .jumbotron {
+    width: 100%;
+    height: auto;
+  }
+  .jumbotron .img-bg {
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .jumbotron .j-tittle {
+    width: 100%;
+    border: 2px dashed #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .jumbotron .jcontent {
+    position: relative;
+    font-family: "Playfair Display", serif;
+  }
+  .jumbotron .jcontent h1 {
+    font-size: 8vw;
+  }
+  .jumbotron .jcontent h2 {
+    font-size: 7vw;
+  }
+  .bttn,
+  .jumbotron .jcontent p {
+    font-size: 5vw;
+  }
+  .jumbotron .img-cnt {
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .bttn .sbox,
+  .bttn a:hover,
+  .card {
+    border: 2px solid;
+  }
+  .content-left,
+  .content-right {
+    float: none;
+  }
+  .bttn {
+    line-height: 1;
+    overflow: hidden;
+    padding: 10px;
+  }
+  .bttn .sbox {
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+  }
+  .bttn a:hover {
+    color: #444941;
+    background-color: #fff;
+    box-shadow: 4px 4px 0 2px;
+    font-weight: 700;
+  }
+  .card {
+    width: 100%;
+    padding: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20;
+    text-align: center;
+  }
+  .card .c-text {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid;
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  .card img {
+    max-width: 60%;
+    max-height: 50%;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+  .slideshow {
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+  }
+  .slideshow img {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.66);
+  }
+}
